@@ -1,0 +1,87 @@
+.app {
+  font-family: "Arial", sans-serif;
+  background-color: #fff8e1;
+  color: #333;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #ff6b6b;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.hero-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.hero-title {
+  font-size: 1.5em; /* Giảm kích thước tiêu đề cho responsive */
+}
+
+.slider-image {
+  width: 100%; /* Chiều rộng 100% để chiếm toàn bộ khung hình */
+  height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+  border-radius: 10px; /* Bo góc để tạo độ mềm mại cho ảnh */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng để tạo chiều sâu */
+  object-fit: cover; /* Đảm bảo hình ảnh lấp đầy khung mà không bị méo */
+  max-height: 1000px; /* Giới hạn chiều cao tối đa để ảnh không quá lớn */
+}
+
+.news,
+.future,
+.forecast,
+.secrets,
+.special-announcement,
+.appreciation {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffebcd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news h3,
+.future h3,
+.forecast h3,
+.secrets h3,
+.special-announcement h3,
+.appreciation h3 {
+  color: #ff4757;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.8em; /* Giảm kích thước tiêu đề trên di động */
+  }
+
+  .hero-title {
+    font-size: 1.2em; /* Giảm kích thước tiêu đề cho hero section */
+  }
+
+  .news,
+  .future,
+  .forecast,
+  .secrets,
+  .special-announcement,
+  .appreciation {
+    padding: 15px; /* Giảm padding cho các section */
+  }
+}
